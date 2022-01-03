@@ -18,19 +18,26 @@ struct ContentView: View {
     
     var body: some View {
         TabView(selection: $selection, content: {
-            Color.white.tabItem{
+            AssetView()
+                .tabItem{
                 Image(systemName: "dollarsign.circle.fill")
                                 Text("자산")
             }.tag(Tab.asset)
-            Color.blue.edgesIgnoringSafeArea(.all).tabItem {
+            Color.blue
+                .edgesIgnoringSafeArea(.all)
+                .tabItem {
                 Image(systemName: "hand.thumbsup.fill")
                 Text("추천")
             }.tag(Tab.recommend)
-            Color.yellow.edgesIgnoringSafeArea(.all).tabItem {
+            Color.yellow
+                .edgesIgnoringSafeArea(.all)
+                .tabItem {
                 Image(systemName: "bell.fill")
                 Text("알림")
             }.tag(Tab.alert)
-            Color.red.edgesIgnoringSafeArea(.all).tabItem {
+            Color.red
+                .edgesIgnoringSafeArea(.all)
+                .tabItem {
                 Image(systemName: "gearshape.fill")
                 Text("설정")
             }.tag(Tab.setting)
