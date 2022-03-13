@@ -13,6 +13,9 @@
 		DB7B27EC26F62D7F0053E4DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB7B27EB26F62D7F0053E4DC /* Assets.xcassets */; };
 		DB7B27EF26F62D7F0053E4DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB7B27EE26F62D7F0053E4DC /* Preview Assets.xcassets */; };
 		DB7B27F226F62D7F0053E4DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7B27F026F62D7F0053E4DC /* LaunchScreen.storyboard */; };
+		DB98754427DDB74E0019A79C /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB98754327DDB74E0019A79C /* Home.swift */; };
+		DB98754627DDB7690019A79C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB98754527DDB7690019A79C /* Card.swift */; };
+		DB98754827DDB77A0019A79C /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB98754727DDB77A0019A79C /* Expense.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		DB7B27EE26F62D7F0053E4DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB7B27F126F62D7F0053E4DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB7B27F326F62D7F0053E4DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB98754327DDB74E0019A79C /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		DB98754527DDB7690019A79C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		DB98754727DDB77A0019A79C /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,8 @@
 		DB7B27E426F62D7D0053E4DC /* SwiftUIStudy */ = {
 			isa = PBXGroup;
 			children = (
+				DB98754127DDB7340019A79C /* Model */,
+				DB98754227DDB7390019A79C /* View */,
 				DB7B27E526F62D7D0053E4DC /* AppDelegate.swift */,
 				DB7B27E726F62D7D0053E4DC /* SceneDelegate.swift */,
 				DB7B27E926F62D7D0053E4DC /* ContentView.swift */,
@@ -73,6 +81,23 @@
 				DB7B27EE26F62D7F0053E4DC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB98754127DDB7340019A79C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB98754527DDB7690019A79C /* Card.swift */,
+				DB98754727DDB77A0019A79C /* Expense.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB98754227DDB7390019A79C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB98754327DDB74E0019A79C /* Home.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB98754827DDB77A0019A79C /* Expense.swift in Sources */,
 				DB7B27E626F62D7D0053E4DC /* AppDelegate.swift in Sources */,
 				DB7B27E826F62D7D0053E4DC /* SceneDelegate.swift in Sources */,
+				DB98754627DDB7690019A79C /* Card.swift in Sources */,
+				DB98754427DDB74E0019A79C /* Home.swift in Sources */,
 				DB7B27EA26F62D7D0053E4DC /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +319,7 @@
 				DEVELOPMENT_TEAM = 58P548H5HJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIStudy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +341,7 @@
 				DEVELOPMENT_TEAM = 58P548H5HJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIStudy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
