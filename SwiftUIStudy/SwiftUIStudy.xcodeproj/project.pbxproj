@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		DB7B27EC26F62D7F0053E4DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB7B27EB26F62D7F0053E4DC /* Assets.xcassets */; };
 		DB7B27EF26F62D7F0053E4DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB7B27EE26F62D7F0053E4DC /* Preview Assets.xcassets */; };
 		DB7B27F226F62D7F0053E4DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7B27F026F62D7F0053E4DC /* LaunchScreen.storyboard */; };
+		DB95E8B327E560370020E3F4 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = DB95E8B227E560370020E3F4 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB95E8B327E560370020E3F4 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +93,9 @@
 			dependencies = (
 			);
 			name = SwiftUIStudy;
+			packageProductDependencies = (
+				DB95E8B227E560370020E3F4 /* SDWebImageSwiftUI */,
+			);
 			productName = SwiftUIStudy;
 			productReference = DB7B27E226F62D7D0053E4DC /* SwiftUIStudy.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +123,9 @@
 				Base,
 			);
 			mainGroup = DB7B27D926F62D7D0053E4DC;
+			packageReferences = (
+				DB95E8B127E560370020E3F4 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = DB7B27E326F62D7D0053E4DC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -291,6 +299,7 @@
 				DEVELOPMENT_TEAM = 58P548H5HJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIStudy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +321,7 @@
 				DEVELOPMENT_TEAM = 58P548H5HJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIStudy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -345,6 +355,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB95E8B127E560370020E3F4 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB95E8B227E560370020E3F4 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB95E8B127E560370020E3F4 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DB7B27DA26F62D7D0053E4DC /* Project object */;
 }
