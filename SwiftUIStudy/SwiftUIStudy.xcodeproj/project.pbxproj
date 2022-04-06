@@ -13,6 +13,8 @@
 		DB7B27EC26F62D7F0053E4DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB7B27EB26F62D7F0053E4DC /* Assets.xcassets */; };
 		DB7B27EF26F62D7F0053E4DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB7B27EE26F62D7F0053E4DC /* Preview Assets.xcassets */; };
 		DB7B27F226F62D7F0053E4DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7B27F026F62D7F0053E4DC /* LaunchScreen.storyboard */; };
+		DBC13CC627FDDBA400052B56 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC13CC527FDDBA400052B56 /* Movie.swift */; };
+		DBC13CC927FDDCE600052B56 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC13CC827FDDCE600052B56 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DB7B27EE26F62D7F0053E4DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB7B27F126F62D7F0053E4DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB7B27F326F62D7F0053E4DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBC13CC527FDDBA400052B56 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		DBC13CC827FDDCE600052B56 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		DB7B27E426F62D7D0053E4DC /* SwiftUIStudy */ = {
 			isa = PBXGroup;
 			children = (
+				DBC13CC727FDDCC800052B56 /* View */,
+				DBC13CC427FDDB8E00052B56 /* Model */,
 				DB7B27E526F62D7D0053E4DC /* AppDelegate.swift */,
 				DB7B27E726F62D7D0053E4DC /* SceneDelegate.swift */,
 				DB7B27E926F62D7D0053E4DC /* ContentView.swift */,
@@ -73,6 +79,22 @@
 				DB7B27EE26F62D7F0053E4DC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DBC13CC427FDDB8E00052B56 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBC13CC527FDDBA400052B56 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBC13CC727FDDCC800052B56 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBC13CC827FDDCE600052B56 /* Home.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +169,8 @@
 			files = (
 				DB7B27E626F62D7D0053E4DC /* AppDelegate.swift in Sources */,
 				DB7B27E826F62D7D0053E4DC /* SceneDelegate.swift in Sources */,
+				DBC13CC927FDDCE600052B56 /* Home.swift in Sources */,
+				DBC13CC627FDDBA400052B56 /* Movie.swift in Sources */,
 				DB7B27EA26F62D7D0053E4DC /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
